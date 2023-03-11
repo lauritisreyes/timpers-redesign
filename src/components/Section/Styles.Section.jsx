@@ -15,6 +15,11 @@ export const StyledSection = styled.section `
             justify-content: center;
             width: 70%;
         }
+        &-title {
+            font-size: 3rem;
+            font-weight: 500;
+            margin: 0 0 2rem 3rem;
+        }
         &-content {
             display: flex;
             flex-direction: row;
@@ -35,6 +40,18 @@ export const StyledSection = styled.section `
                     align-items: flex-start;
                     justify-content: center;
                     padding: 4rem;
+                    .Text {
+                        &-subtitle {
+                            font-size: 2rem;
+                            line-height: 140%;
+                            margin-bottom: 1rem;
+                            font-weight: 500;
+                        }
+                        &-paragraph {
+                            font-size: 1rem;
+                            line-height: 160%;
+                        }
+                    }
                 }
             }
         }

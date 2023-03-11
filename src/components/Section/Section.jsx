@@ -1,20 +1,19 @@
-import { StyledSection, StyledSectionParagraph, StyledSectionSubtitle, StyledSectionTitle } from "./Styles.Section"
+import { StyledSection } from "./Styles.Section"
 
 
-export const Section = () => {
+export const Section = ({title, subtitle, paragraph, src, alt}) => {
     return (
         <StyledSection className="Section" >
             <div className="Section-container">
-                <SectionTitle text='Nosotros'/>
+                <h2 className="Section-title">{title}</h2>
                 <div className="Section-content">
                     <div className="Section-media">
-                        <img className="Section-img" src="./timpers-team.jpg" alt="Timpers team"/>
+                        <img className="Section-img" src={src} alt={alt}/>
                     </div>
                     <div className="Section-info">
                         <div className="Info-text">
-                            <StyledSectionSubtitle className="Text-title">La marca más normal del mundo</StyledSectionSubtitle>
-                            <StyledSectionParagraph className="Text-title">Aunque queramos ser la marca más normal del mundo ¡Somos una empresa diferente! No solo fabricamos zapatillas, sino que también luchamos por la normalización de la discapacidad.</StyledSectionParagraph>
-                            <StyledSectionParagraph className="Text-title">Nuestra empresa está formada al 100% por personas con discapacidad y estamos súper orgullosos de ello. ¡Únete a cambiar el mundo y descubre nuestra maravillosa marca!</StyledSectionParagraph>
+                            <h3 className="Text-subtitle">{subtitle}</h3>
+                            <p className="Text-paragraph">{paragraph}</p>
                         </div>
                         
                     </div>
@@ -25,9 +24,3 @@ export const Section = () => {
     )
 }
 
-
-const SectionTitle = ({text}) => {
-    return (
-        <StyledSectionTitle>{text}</StyledSectionTitle>
-    )
-}
