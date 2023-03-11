@@ -7,7 +7,8 @@ export const StyledHeader = styled.header `
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: white;
+    padding: 1rem 0;
     .Header {
         &-container {
             width: 80%;
@@ -15,7 +16,6 @@ export const StyledHeader = styled.header `
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            background-color: red;
         }
     }
 `
@@ -23,7 +23,7 @@ export const StyledHeader = styled.header `
 
 export const Logo = styled.div `
     width: 100px;
-    background-color: blue;
+    background-color: white;
 `
 
 
@@ -36,7 +36,6 @@ export const HeaderNav = styled.nav `
             justify-content: center;
         }
         &-li {
-            background-color: yellow;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -47,7 +46,6 @@ export const HeaderNav = styled.nav `
             padding: 1rem 0.5rem;
         }
     }
-    background-color: green;
 `
 
 
@@ -58,5 +56,19 @@ export const HeaderUserNav = styled.nav `
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
+    .UserNav {
+        &-ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        &-li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 `

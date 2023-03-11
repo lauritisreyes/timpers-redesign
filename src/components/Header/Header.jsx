@@ -1,4 +1,5 @@
 import { HeaderNav, HeaderUserNav, Logo, StyledHeader } from "./Styles.Header"
+import { Icon } from "../Common/Icons/Icons"
 
 
 export const Header = () => {
@@ -9,6 +10,12 @@ export const Header = () => {
         { id:2, text: 'Últimas Novedades' },
         { id:3, text: 'Universo Timpers' },
         { id:4, text: 'Contacto' }
+    ]
+
+    const user = [
+        { id:0, text:'Heart' },
+        { id:1, text:'ShopCart' },
+        { id:2, text:'User' },
     ]
 
     return (
@@ -29,9 +36,16 @@ export const Header = () => {
                             )}
                         </ul>
                     </HeaderNav>
-                    <HeaderUserNav>
+                    <HeaderUserNav className="Header-userNav">
                         <ul className="UserNav-ul">
-                            
+                            { user.map ( (text, id) =>
+                                <li key={id} className="UserNav-li">
+                                    <a className="UserNav-link">
+                                        <Icon name='User'/>
+                                        {/* <Icon name={text}/> */}
+                                    </a>
+                                </li>
+                            )}
                         </ul>
                     </HeaderUserNav>
                 </div>

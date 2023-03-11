@@ -3,7 +3,14 @@ import { StyledIntro } from "./Styles.Intro"
 export const Intro = () => {
     return (
         <StyledIntro className="Intro">
-            <img className="Intro-img" src="../blind-person-sneakers.jpg"/>
+            <div className="Intro-container">
+                <div className="Intro-media">
+                    <img className="Media-img" src="../sneakers-blue-side.jpg"/>
+                </div>
+                <div className="Intro-text">
+                </div>
+            </div>
+            
         </StyledIntro>
     )
 }
